@@ -31,7 +31,7 @@ func (mycli *MyClient) register() {
 }
 
 func SendMessage(message string) string {
-	client := openai.NewClient("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") //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
+	client := openai.NewClient("") 
 	resp, err := client.CreateChatCompletion(
 		context.Background(),
 		openai.ChatCompletionRequest{
